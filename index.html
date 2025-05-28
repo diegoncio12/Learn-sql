@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aprende SQL - Plataforma Interactiva</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <h2>Categorías</h2>
+  <ul>
+    <li class="category" data-category="basico">Básico
+      <ul class="subcategory-list">
+        <li class="subcategory" data-subcategory="select">SELECT</li>
+        <li class="subcategory" data-subcategory="from">FROM</li>
+        <li class="subcategory" data-subcategory="where">WHERE</li>
+        <li class="subcategory" data-subcategory="and_or_not">AND, OR, NOT</li>
+        <li class="subcategory" data-subcategory="insert">INSERT</li>
+        <li class="subcategory" data-subcategory="create">CREATE (tabla, db)</li>
+        <li class="subcategory" data-subcategory="alter_update_delete">ALTER, UPDATE, DELETE</li>
+        <li class="subcategory" data-subcategory="limit">LIMIT</li>
+        <li class="subcategory" data-subcategory="funciones_basicas">MIN, MAX, COUNT, AVG, SUM, LIKE</li>
+      </ul>
+    </li>
+    <li class="category" data-category="intermedio">Intermedio
+      <ul class="subcategory-list">
+        <li class="subcategory" data-subcategory="join">JOIN</li>
+        <li class="subcategory" data-subcategory="inner_join">INNER JOIN</li>
+        <li class="subcategory" data-subcategory="left_join">LEFT JOIN</li>
+        <li class="subcategory" data-subcategory="right_join">RIGHT JOIN</li>
+      </ul>
+    </li>
+    <li class="category" data-category="avanzado">Avanzado
+      <ul class="subcategory-list">
+        <li class="subcategory" data-subcategory="views">VIEWS</li>
+        <li class="subcategory" data-subcategory="funciones">FUNCIONES</li>
+        <li class="subcategory" data-subcategory="procedimientos">PROCEDIMIENTOS</li>
+        <li class="subcategory" data-subcategory="triggers">TRIGGERS</li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Ejercicios de SQL</h1>
+  <div id="exercises-container"></div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+  margin: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f0f0f; 
+  color: white; 
+  display: flex; 
+  height: 100vh; 
+  overflow: hidden;
+}
+nav {
+  width: 250px; 
+  background: #1c1c1c; 
+  padding: 20px; 
+  box-sizing: border-box;
+  border-right: 1px solid #333;
+}
+nav h2 {
+  margin-top: 0; 
+  color: #3b82f6;
+}
+nav ul {
+  list-style: none; 
+  padding-left: 0;
+}
+nav li {
+  margin: 10px 0; 
+  cursor: pointer; 
+  color: #ccc;
+}
+
+nav li.category > ul.subcategory-list {
+  display: block; /* o none si quieres ocultar inicialmente */
+  padding-left: 15px;
+  margin-top: 5px;
+}
+
+
+nav li.subcategory {
+  cursor: pointer;
+  margin: 4px 0;
+}
+
+nav li.subcategory.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+nav li.active, nav li:hover {
+  color: #3b82f6;
+  font-weight: bold;
+}
+main {
+  flex-grow: 1; 
+  padding: 20px; 
+  overflow-y: auto;
+  background: #121212;
+}
+h1 {
+  color: #3b82f6;
+}
+.exercise {
+  background: #1f1f1f; 
+  border-radius: 8px; 
+  padding: 15px; 
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #222;
+}
+.exercise h3 {
+  margin-top: 0; 
+  color: #50fa7b;
+}
+textarea.sql-input {
+  width: 100%; 
+  height: 120px; 
+  font-family: monospace;
+  font-size: 14px; 
+  background: #262626; 
+  color: #00ff99;
+  border: none; 
+  border-radius: 6px; 
+  padding: 10px; 
+  resize: vertical;
+}
+button {
+  margin-top: 10px; 
+  padding: 10px 15px; 
+  background: #3b82f6; 
+  border: none;
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold; 
+  cursor: pointer;
+}
+button:hover {
+  background: #2563eb;
+}
+.result {
+  margin-top: 10px; 
+  padding: 10px; 
+  border-radius: 5px;
+}
+.result.correct {
+  background-color: #2f8f4e; 
+  color: white;
+}
+.result.incorrect {
+  background-color: #b22222; 
+  color: white;
+}
+pre {
+  background: #222; 
+  padding: 10px; 
+  border-radius: 6px; 
+  overflow-x: auto;
+}
