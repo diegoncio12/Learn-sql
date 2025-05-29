@@ -1,3 +1,5 @@
+HOLA, mi nombre es DIego Gustavo, 
+
 # SQL Exercises Interactivo
 
 Proyecto web con ejercicios interactivos para practicar consultas SQL.  
